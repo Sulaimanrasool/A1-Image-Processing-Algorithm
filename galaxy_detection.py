@@ -420,6 +420,11 @@ def fill_catalogue(dt, cutoff, background, zero_p, store_data, x_h, y_h, save=Fa
 
 
 if __name__ == '__main__':
+    """ 
+        Project setup to perform galaxy-detection algorithm. 
+        To view number count plot later, follow the README instructions
+    """
+    
     header, data, zero_point = get_data('mosaic.fits', save=False)  # Obtain header, data and zero-point form image
 
     avg_background, std = get_background_hist(data)  # Get background statistics: mean and standard deviation
